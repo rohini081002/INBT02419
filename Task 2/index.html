@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGGLES</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./images/favicon.ico">
+</head>
+<body id="main">
+  <div class="top">
+    <label class="category" for="category"><h2>What kind of joke do you want? Choose one:-</h2></label>
+    <br />
+    <div class="in-top">
+      <select class="select" id="category">
+          <option value="Any" selected>Any</option>
+          <option value="Miscellaneous">Miscellaneous</option>
+          <option value="Programming">Programming</option>
+          <option value="Pun">Pun</option>
+      </select>
+      <br />
+      <button class="btn" id="getJokeBtn">Get a Joke</button>
+     </div>
+    <p class="joke" id="joke"></p>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

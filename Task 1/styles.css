@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: white; 
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    padding: 1%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.nav-logo{
+    height: 100%;
+    width: 100px;
+}
+.nav-logo-img{
+    height: 100%;
+    width: 100%;
+}
+.top-container{
+    width:100%;
+    height: 700px;
+    background-image: url('./images/b.jpg');
+    background-size:cover;
+    background-position: center center;
+    object-fit: contain;
+
+}
+.top-bg{
+    height: 100%;
+    width: 100%;
+}
+.nitm{
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: white;
+}
+
+.nav-items{
+    padding: 0 0 0 40px;
+    display: flex;
+    gap: 30px;
+}
+.mid-container{
+    font-weight: 700;
+    width: 100%;
+    padding: 0 auto;
+}
+.desc{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.desc h2{
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 800;
+}
+.desc p{
+    padding: 10px;
+    line-height: 2;
+    font-size: 20px;
+}
+.characters h2{
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 800;
+}
+.characters{
+    margin: 100px auto;
+    text-align: left;
+}
+.char{
+    margin: 20px auto 20px auto;
+    width:40%;
+    
+}
+.gif{
+    display: inline-block;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+.char p{
+    display: inline-block;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    margin-top: 5px;
+}
+.footer-link:hover{
+    cursor: pointer;
+}
+
+.copyright{
+    padding: 5px;
+}
+
+
+hr{
+    margin: 10px;
+}
+
+
+.newsletter{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+.newsletter h2{
+    padding-bottom: 15px;
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.btn{
+    margin-top: 1rem;
+    display:inline-block;
+    padding:.9rem 3rem;
+    border-radius: .5rem;
+    color:black;
+    background:white;
+    font-size: 1.7rem;
+    font-style: italic;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background:wheat;
+    font-weight: 300;
+}
+
+.box{
+    width: 100%;
+    margin:.7rem 0;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    padding:1rem 1.2rem;
+    text-transform: none;
+}
+
+
+
+@media screen and (max-width: 445px ) {
+    .nav-logo-img{
+        height: 75%;
+        width: 75%;
+    }
+    .nav-items{
+        gap:10px;
+    }
+    .nitm{
+        font-size: 13px;
+    }
+    .newsletter{
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+    .newsletter h2{
+        padding: 30px 20px 5px;
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 0.5rem;
+        padding: 1px;
+    }
+    .box{
+        width:50%;
+        font-size: 0.5rem;
+        padding: 2px;
+        margin:1px ;
+    }
+    .top-container{
+        height: 15rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .desc p{
+        padding: 5px;
+        font-size: 10px;
+    }
+    .char p{
+        font-size: 15px;
+    }
+    .desc h2{
+        padding-bottom: 15px;
+        font-size: 20px;
+    }
+    .characters{
+        margin: 15px auto;
+    }
+    .characters h2{
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    
+
+}
+
+
+
+@media screen and (min-width:445px) and (max-width:950px) {
+    .top-container{
+        height: 30rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .newsletter{
+        position: absolute;
+        top: 130px;
+        left: 40px;
+    }
+    .newsletter h2{
+        padding: 30px 20px 5px;
+        font-size: 20px;
+    }
+    .box{
+        width:75%;
+        font-size: 1rem;
+        padding:3px;
+        margin:3px ;
+    }
+    .btn{
+        font-size: 1rem;
+        padding: 3px;
+    }
+    .desc p{
+        padding: 5px;
+        font-size: 15px;
+    }
+    .char p{
+        font-size: 15px;
+    }
+    .desc h2{
+        padding-bottom: 15px;
+        font-size: 22px;
+    }
+    .characters{
+        margin: 15px auto;
+    }
+    .characters h2{
+        padding-bottom: 10px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width:950px) {
+    .desc p{
+        padding: 5px;
+        font-size: 25px;
+    }
+    .char p{
+        font-size: 25px;
+    }
+    .desc h2{
+        padding-bottom: 15px;
+        font-size: 30px;
+    }
+    .characters h2{
+        padding-bottom: 10px;
+        font-size: 30px;
+    }
+    .top-container{
+        background-size: cover;
+        
+    }
+    
+
+    
+}
+
+
+
+
